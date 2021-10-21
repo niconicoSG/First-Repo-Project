@@ -1,0 +1,869 @@
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0rem;
+  padding: 0rem;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100%;
+  height: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  background: url(/Images/PplRoad60.gif) no-repeat center center fixed;
+  background-size: 100% 120%;
+  background-position: center;
+  background-attachment: fixed;
+  color: #cacaca;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+.midFrame {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.letters.short {
+  display: none;
+}
+
+#navbar {
+  background-color: #1a1d2f;
+  text-align: center;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.blinkFrame {
+  width: 50%;
+  float: left;
+}
+
+.left {
+  position: relative;
+  right: 2.5rem;
+}
+
+.right {
+  position: relative;
+  left: 2.5rem;
+}
+
+.nameTitle {
+  clear: left;
+  text-align: center;
+}
+
+.blink {
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    color: #1a1d2f;
+  }
+}
+
+.titleAnim {
+  animation: titleAnim 2s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+@keyframes titleAnim {
+  50% {
+    color: #32caf0;
+    text-shadow: #d402d4 0.1rem 0.2rem 0.3rem;
+  }
+}
+
+.articleThreeFour {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.articleThreeFour > div {
+  background-color: #1a1d2f;
+  border-radius: 1rem;
+}
+
+#pfp {
+  margin: 1rem;
+  float: left;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 3.5rem;
+}
+
+.intro {
+  padding: 1rem;
+}
+
+.intro > div {
+  margin-bottom: 1rem;
+}
+
+.intro .lastDiv {
+  margin-bottom: 0rem;
+}
+
+#pointer {
+  position: absolute;
+  z-index: 2;
+  top: 0.8rem;
+  right: 4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.specs {
+  padding-bottom: 1.2rem;
+  padding-top: 0rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 1rem;
+  text-align: center;
+  position: relative;
+  font-weight: bolder;
+}
+
+#spec {
+  font-size: 1.2rem;
+}
+
+.titleFrame {
+  padding: 1rem;
+  text-align: center;
+}
+
+.articleFull {
+  background-color: #1a1d2f;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.intro2 {
+  margin-bottom: 1rem;
+}
+
+#pc {
+  float: left;
+  padding-right: 0.4rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+.articleThree {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1rem;
+}
+
+.button {
+  background-color: #1a1d2f;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  text-align: center;
+  grid-template-rows: auto auto;
+  position: relative;
+}
+
+.buttonText {
+  height: max-content;
+  margin-bottom: 1rem;
+}
+
+.logocontainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 0.1rem;
+  min-height: 2rem;
+}
+
+#githublogo {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: absolute;
+  bottom: 0rem;
+}
+
+#tielogo {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0rem;
+}
+
+#calendarlogo {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: absolute;
+  bottom: 0rem;
+}
+
+#button {
+  position: relative;
+  box-shadow: rgba(119, 105, 105, 0.5) 0rem 0.3rem 0.3rem;
+  cursor: pointer;
+}
+
+#button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 1rem;
+  animation: shadowBlink 3s linear infinite;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+@keyframes shadowBlink {
+  0% {
+    box-shadow: rgba(255, 255, 255, 0.9) 0rem 1rem 1rem;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: rgba(255, 255, 255, 0.9) 0rem 1rem 1rem;
+  }
+}
+
+#button:hover::before {
+  opacity: 1;
+}
+
+footer {
+  background-color: #16161d;
+  display: grid;
+  text-align: center;
+  padding-top: 1.2rem;
+  padding-bottom: 0.8rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.contact {
+  font-size: 1.3rem;
+}
+
+.links {
+  display: grid;
+  grid-gap: 1rem;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.css {
+  animation: titleAnim 2s ease-in-out infinite;
+  animation-delay: 1.2s;
+  font-style: italic;
+}
+
+.articleThreeFour .specs {
+  position: relative;
+  overflow: hidden;
+}
+
+.articleThreeFour .letter {
+  display: inline-block;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+.articleThreeFour .letter2 {
+  display: inline-block;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+.letters {
+  cursor: pointer;
+  animation: titleAnim 2s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #16161d;
+  padding: 1rem;
+  width: 17em;
+  max-width: 82%;
+  box-shadow: rgb(255, 0, 191) 0rem 0.4rem 0.8rem;
+  animation: pinkShadowBlink 3s linear infinite;
+}
+
+@keyframes pinkShadowBlink {
+  0% {
+    box-shadow: rgba(255, 0, 191) 0rem 1rem 1rem;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: rgba(255, 0, 191) 0rem 1rem 1rem;
+  }
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(96, 96, 121, 0.7);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#gmail {
+  width: 3rem;
+  height: 3rem;
+}
+
+#linkedin {
+  width: 3rem;
+  height: 3rem;
+}
+
+.phone {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media all and (min-width: 1024px) and (min-height: 768px) {
+  * {
+    font-size: 1.2rem;
+  }
+  .modal {
+    width: 25em;
+    padding: 2rem;
+  }
+  footer {
+    font-size: 0.1rem;
+  }
+}
+
+@media all and (min-width: 768px) and (min-height: 1024px) {
+  * {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    font-size: 1.2rem;
+  }
+
+  body {
+    background-size: 100% 100%;
+    margin: 0rem;
+  }
+  .midFrame {
+    display: grid;
+    grid-gap: 1.2rem;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.9rem;
+    padding-bottom: 1.9rem;
+    margin-bottom: 1.9rem;
+  }
+
+  .letters.long {
+    display: none;
+  }
+
+  .letters.short {
+    display: inline-block;
+  }
+
+  #navbar {
+    background-color: #1a1d2f;
+    height: auto;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .blinkFrame {
+    font-weight: bolder;
+  }
+
+  .left,
+  .right {
+    font-size: 1.5rem;
+  }
+
+  .articleThreeFour {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    column-gap: 1.2rem;
+    height: auto;
+  }
+
+  .articleThreeFour > div {
+    border-radius: 1.5rem;
+  }
+
+  #pfp {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+
+  .intro {
+    padding: 2rem;
+  }
+  .intro > div {
+    width: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  #pointer {
+    position: absolute;
+    z-index: 2;
+    left: 6rem;
+    top: 8rem;
+  }
+
+  .specs {
+    padding: 1rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: none;
+    position: relative;
+    width: auto;
+    font-weight: bolder;
+    text-align: unset;
+  }
+
+  .specs > div {
+    width: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .titleFrame {
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .articleFull {
+    width: auto;
+    height: auto;
+    display: grid;
+    border-radius: 1.5rem;
+    padding: 0rem;
+  }
+
+  #pc {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0rem;
+  }
+
+  .desc {
+    padding: 2rem;
+  }
+
+  .articleThree {
+    column-gap: 1.2rem;
+  }
+
+  .articleThree > div {
+    background: #1a1d2f;
+    border-radius: 1.9rem;
+    padding: 1.5rem;
+    line-height: 150%;
+  }
+
+  .phone {
+    font-size: 1.2rem;
+  }
+
+  footer > div {
+    font-size: 0.8rem;
+  }
+
+  #button::before {
+    border-radius: 1.9rem;
+  }
+}
+
+@media all and (min-width: 1200px) and (min-height: 768px) {
+  /* RESETS/////////////////////////////////////////// */
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /*//////////////////////////////////////////////////////////////*/
+
+  body {
+    background-size: 100% 100%;
+    margin: 0rem;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    margin: auto;
+    font-size: 2.8rem;
+  }
+
+  .midFrame {
+    margin-left: auto;
+    margin-right: auto;
+    width: 63%;
+    grid-gap: 1.9rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  #navbar {
+    height: auto;
+    box-shadow: black 0rem 0.3rem 0.6rem;
+    border-radius: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .blinkFrame {
+    font-weight: bolder;
+  }
+
+  .left {
+    font-size: 2rem;
+  }
+
+  .right {
+    font-size: 2rem;
+  }
+
+  .articleThreeFour {
+    grid-template-columns: 5fr 2fr;
+    column-gap: 1.9rem;
+    height: auto;
+  }
+
+  .articleThreeFour > div {
+    border-radius: 1.5rem;
+    box-shadow: black 0rem 0.3rem 0.6rem;
+    position: relative;
+  }
+
+  #pfp {
+    margin: 2rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 6rem;
+  }
+
+  .intro {
+    width: auto;
+    padding: 2rem;
+  }
+
+  .intro > div {
+    width: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  #pointer {
+    position: absolute;
+    z-index: 2;
+    left: 8rem;
+    top: 10rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .specs {
+    width: auto;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    font-weight: bolder;
+    grid-template-columns: unset;
+    text-align: unset;
+    position: relative;
+    overflow-y: visible;
+  }
+
+  .specs > div {
+    width: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .titleFrame {
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: unset;
+  }
+
+  #spec {
+    font-size: 1.7rem;
+  }
+
+  .articleFull {
+    width: auto;
+    height: auto;
+    display: grid;
+    border-radius: 1.5rem;
+    box-shadow: black 0rem 0.3rem 0.6rem;
+    padding: 0rem;
+  }
+
+  #pc {
+    float: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-right: 0rem;
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .desc {
+    padding: 2rem;
+    line-height: 150%;
+  }
+
+  .articleThree {
+    grid-template-rows: unset;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.9rem;
+    height: auto;
+  }
+
+  .button {
+    border-radius: 1.5rem;
+    padding: 1rem;
+  }
+
+  #button {
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+  }
+
+  #button::before {
+    border-radius: 1.5rem;
+  }
+
+  footer {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+    display: grid;
+    line-height: unset;
+  }
+
+  .contact {
+    font-size: 2rem;
+  }
+
+  .links {
+    display: grid;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .phone {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  #gmail {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #linkedin {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}

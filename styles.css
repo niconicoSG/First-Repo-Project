@@ -138,17 +138,17 @@ h1 {
 }
 
 #pointer {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  top: 0.8rem;
-  right: 4rem;
-  width: 1.8rem;
-  height: 1.8rem;
+  top: 0.5rem;
+  left: 4rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .specs {
   padding-bottom: 1.2rem;
-  padding-top: 0rem;
+  padding-top: 1.2rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: grid;
@@ -157,6 +157,11 @@ h1 {
   text-align: center;
   position: relative;
   font-weight: bolder;
+  margin-top: -5rem;
+}
+.empty {
+  width: 3rem;
+  height: 3rem;
 }
 
 #spec {
@@ -165,6 +170,7 @@ h1 {
 
 .titleFrame {
   padding: 1rem;
+  padding-bottom: 0rem;
   text-align: center;
 }
 
@@ -411,7 +417,7 @@ footer {
   }
 }
 
-@media all and (min-width: 768px) and (min-height: 1024px) {
+@media all and (min-width: 801px) and (min-height: 1024px) {
   * {
     padding-left: 0rem;
     padding-right: 0rem;
@@ -488,7 +494,7 @@ footer {
   #pointer {
     position: absolute;
     z-index: 2;
-    left: 6rem;
+    left: 5rem;
     top: 8rem;
   }
 
@@ -759,12 +765,12 @@ footer {
   }
 
   #pointer {
-    position: absolute;
+    position: relative;
     z-index: 2;
-    left: 8rem;
+    left: 5rem;
     top: 10rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 7rem;
+    height: 7rem;
   }
 
   .specs {
@@ -778,6 +784,7 @@ footer {
     text-align: unset;
     position: relative;
     overflow-y: visible;
+    margin-top: -11rem;
   }
 
   .specs > div {
@@ -880,5 +887,82 @@ footer {
   #linkedin {
     width: 3.5rem;
     height: 3.5rem;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 800px) {
+  #pointer {
+    position: relative;
+      z-index: 2;
+      top: 0.5rem;
+      left: 7rem;
+      width: 5rem;
+      height: 5rem;
+  }
+}
+
+@media all and (min-width: 800px) and (max-height: 1023px) and (max-width: 1199px) {
+#pointer {
+    position: relative;
+    z-index: 2;
+    top: 0.5rem;
+    left: 10rem;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media all and (min-width: 1199px) and (max-height: 767px) {
+  #pointer {
+    position: relative;
+    z-index: 2;
+    top: 0.5rem;
+    left: 15rem;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media all and (min-width: 1400px) and (min-height: 768px) {
+  #pointer {
+    position: relative;
+    z-index: 2;
+    left: 7rem;
+    top: 10rem;
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media all and (min-width: 1500px) and (min-height: 768px) {
+  #pointer {
+    position: relative;
+    z-index: 2;
+    left: 8rem;
+    top: 10rem;
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media all and (min-width: 1600px) and (min-height: 768px) {
+  #pointer {
+    position: relative;
+    z-index: 2;
+    left: 9rem;
+    top: 10rem;
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media all and (min-width: 1700px) and (min-height: 768px) {
+  #pointer {
+    position: relative;
+    z-index: 2;
+    left: 10rem;
+    top: 10rem;
+    width: 7rem;
+    height: 7rem;
   }
 }

@@ -566,7 +566,7 @@ footer {
   }
 }
 
-@media all and (min-width: 1200px) and (min-height: 768px) {
+@media all and (min-width: 1000px) and (min-height: 400px) {
   /* RESETS/////////////////////////////////////////// */
   html,
   body,

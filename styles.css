@@ -440,14 +440,6 @@ footer {
     margin-bottom: 1.9rem;
   }
 
-  .letters.long {
-    display: none;
-  }
-
-  .letters.short {
-    display: inline-block;
-  }
-
   #navbar {
     background-color: #1a1d2f;
     height: auto;
@@ -909,6 +901,14 @@ footer {
     left: 10rem;
     width: 5rem;
     height: 5rem;
+  }
+
+  .letters.long {
+    display: none;
+  }
+
+  .letters.short {
+    display: inline-block;
   }
 }
 
